@@ -4,8 +4,8 @@
   "description": "test",
   "main": "electron.js",
   "scripts": {
-    "startElectronDev": "npx webpack --config webpack.dev.js && electron .",
-    "startElectronProd": "webpack --config webpack.dev.js && electron .",
+    "startDev": "npx webpack --config webpack.dev.js && electron .",
+    "startProd": "webpack --config webpack.dev.js && electron .",
     "electronBuildDeb": "rm -r -f ./electron-react-test-linux-x64 && rm -r -f ./installers && npx electron-packager ./ \"electron-react-test\" --platform=linux && npx electron-installer-debian --src \"electron-react-test-linux-x64/\" --dest \"./installers\" --arch amd64",
     "electronBuild": "npx electron-packager ./ \"electron-react-test\" --platform=linux",
     "electronPackageDeb": "npx electron-installer-debian --src \"electron-react-test-linux-x64/\" --dest \"./installers\" --arch amd64 ",
